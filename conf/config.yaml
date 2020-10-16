@@ -1,0 +1,2 @@
+source_directory: tests/test_data/test-clean
+target_directory: tests/test_data/test-clean-altered
