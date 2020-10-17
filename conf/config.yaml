@@ -1,2 +1,14 @@
-source_directory: tests/test_data/test-clean
-target_directory: tests/test_data/test-clean-altered
+task: add_noise
+source_directory: data/LibriSpeech/test-clean
+target_directory: data
+urban_meta_path: data/urban_meta.csv
+urban_path: data/UrbanSound8K
+urban_sr: 44100
+libri_sr: 16000
+noise_floor: 0.5
+noise_ceil: 0.8
+impulse_response_path: data/ImpulseResponses
+ir_meta_path: data/ir_meta.csv
+ir_keep_duration: True
+reverb_floor: 0.3
+reverb_ceil: 0.7
