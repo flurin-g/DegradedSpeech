@@ -1,0 +1,11 @@
+,FILE_NAME,PATH,SPLIT
+0,BatteryTolles.wav,Undeground/BatteryTolles.wav,dev
+1,BatteryBrannan.wav,Undeground/BatteryBrannan.wav,test
+2,BatteryPowell.wav,Undeground/BatteryPowell.wav,train
+3,BatteryRandol.wav,Undeground/BatteryRandol.wav,train
+4,BatteryQuarles.wav,Undeground/BatteryQuarles.wav,dev
+5,Amaranth.wav,Miscellaneous/Amaranth.wav,train
+6,AcademicQuadrangle.wav,Miscellaneous/AcademicQuadrangle.wav,train
+7,BiomedicalSciences.wav,Brutalism/BiomedicalSciences.wav,train
+8,GalbraithHall.wav,Brutalism/GalbraithHall.wav,test
+9,CarpenterCenter.wav,Brutalism/CarpenterCenter.wav,train
