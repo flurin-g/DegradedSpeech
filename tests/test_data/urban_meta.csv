@@ -1,0 +1,5 @@
+slice_file_name,fsID,start,end,salience,fold,classID,class,PATH,split
+118279-8-0-13.wav,118279,6.5,10.5,2,1,8,siren,audio/fold1/118279-8-0-13.wav,test
+118279-8-0-5.wav,118279,2.5,6.5,2,1,8,siren,audio/fold1/118279-8-0-5.wav,test
+118279-8-0-8.wav,118279,4.0,8.0,2,1,8,siren,audio/fold1/118279-8-0-8.wav,test
+132016-9-0-0.wav,132016,46.661108,50.661108,2,1,9,street_music,audio/fold1/132016-9-0-0.wav,test
