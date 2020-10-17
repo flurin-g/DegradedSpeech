@@ -5,7 +5,6 @@ from main import create_copy_and_apply
 import os
 
 
-
 class Test(TestCase):
     def test_create_copy_and_apply(self):
         copy_fn = create_copy_and_apply(lambda x: (x, 16_000))
