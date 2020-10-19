@@ -76,6 +76,6 @@ class AddNoise:
         noise = self.load_noise()
         speech, sr = sf.read(src)
         noise = self.match_sr(noise)
-        noise = noise * uniform(self.cfg.noise_floor, self.cfg.noise_ceil)
+        noise = noise * self.cfg.artifact_scaling_factor
         mixed = mix_samples(speech, noise)
         return mixed, sr

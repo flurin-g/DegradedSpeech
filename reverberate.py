@@ -64,7 +64,7 @@ class Reverberate:
         impulse_response, sr_imp = self.load_impulse()
         speech, sr_speech = sf.read(src, always_2d=True)
         wet_speech = self.convolve_impulse_response(speech, impulse_response, sr_speech, sr_imp)
-        wet_speech = wet_speech * uniform(self.cfg.reverb_floor, self.cfg.reverb_ceil)
+        wet_speech = wet_speech * self.cfg.artifact_scaling_factor
         mixed = np.add(speech, wet_speech)
         mixed = normalize(mixed)
         mono_mixed = stereo_to_mono(mixed)
