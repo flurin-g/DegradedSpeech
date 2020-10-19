@@ -8,6 +8,7 @@ import numpy as np
 import soundfile as sf
 
 from add_noise import AddNoise
+from freq_filter import FreqFilter
 from reverberate import create_ir_dataframe, Reverberate
 
 CWD = pathlib.Path(__file__).parent.absolute()
@@ -44,7 +45,7 @@ def main(cfg: DictConfig) -> None:
         fx = Reverberate(cfg, CWD)
         target_dir = f'{CWD}/{cfg.target_directory}/reverb'
     elif cfg.task == "freq_filter":
-        fx = None
+        fx = FreqFilter(cfg, CWD)
         target_dir = f'{CWD}/{cfg.target_directory}/freq_filter'
     elif cfg.task == "create_ir_meta":
         df_ir = create_ir_dataframe(meta_path=cfg.ir_meta_path,
