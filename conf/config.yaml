@@ -12,3 +12,7 @@ ir_meta_path: data/ir_meta.csv
 ir_keep_duration: True
 reverb_floor: 0.3
 reverb_ceil: 0.7
+hp_low: 300
+hp_high: 3000
+bandwidth: 3000
+order: 6
