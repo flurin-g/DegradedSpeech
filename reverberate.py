@@ -24,9 +24,7 @@ def fetch_ir_paths(ir_path: str, cwd: str):
 def create_ir_dataframe(meta_path, ir_path: str, cwd: str):
     paths = fetch_ir_paths(ir_path, cwd)
     df_ir = pd.DataFrame.from_records(paths, columns=['FILE_NAME', 'PATH'])
-    tmp, test = train_test_split(df_ir, test_size=0.2, random_state=42)
-    train, dev = train_test_split(tmp, test_size=0.25, random_state=42)
-    df_ir.loc[train.index, "SPLIT"] = "train"
+    dev, test = train_test_split(df_ir, test_size=0.5, random_state=42)
     df_ir.loc[dev.index, "SPLIT"] = "dev"
     df_ir.loc[test.index, "SPLIT"] = "test"
     df_ir.to_csv(f'{cwd}/{meta_path}')
