@@ -1,4 +1,5 @@
-task: add_noise
+task: add_noise # must be one of add_noise / reverberate / freq_filter / de_noise
+de_noise: noise # must be one of add_noise / reverberate /freq_filter
 source_directory: data/LibriSpeech/test-clean
 target_directory: data
 urban_meta_path: data/urban_meta.csv
